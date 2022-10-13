@@ -7,17 +7,17 @@
 
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
-    let genMasculino = "";
-    let genFeminino = "";
+    let genMasculino = [];
+    let genFeminino = [];
     
     //PROCESSAMENTO
 
     for(nomes of listaDeNomes){
-       let femMasc =  (prompt("informe se o nome inserido é Masculino ou Feminino, sendo M|F Para: "+ nomes )).toUpperCase().trim();
-    if(nomes ==="M"){
+       let femMasc =  (prompt(`O nome ${nomes} é masculino(M) ou feminino(F)?` )).toUpperCase().trim();
+    if(femMasc  ==="M"){
         genMasculino.push(nomes);
     }
-    else if(nomes === "F"){ 
+    else if(femMasc  === "F"){ 
         genFeminino.push(nomes);
     }
     else{ 
@@ -26,7 +26,7 @@
 }
     //SAÍDA
 
-    document.write(`Masculino : ${genMasculino.sort.join(", ")} </br>`);
-    document.write(`Feminino : ${genFeminino.sort.join(", ")} </br>`);
+    document.write(`Masculino : ${genMasculino.sort().join(", ")} </br>`);
+    document.write(`Feminino : ${genFeminino.sort().join(", ")} </br>`);
  
 </script>

@@ -6,11 +6,25 @@ inteiros e decimais<meta charset="UTF-8">
     //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
 
     //ENTRADA
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let numerosPares = [];
+    let numeroImpar = [];
 
 
     //PROCESSAMENTO
+    for(Numero  of listaDeNumeros){
+    if(Numero % 2  === 0){
+        numerosPares.push(Numero);
+    }
+    else { 
+        numeroImpar.push(Numero);
+    }
+}
 
 
     //SAÍDA
-
+    document.write(`Numeros Pares crescente : ${numerosPares.join(", ")}</br>`);
+    document.write(`Numeros Pares decrescennte : ${numerosPares.reverse(", ")}</br>`);
+    document.write(`Numeros Impares crescente : ${numeroImpar.join(", ")}</br>`);
+    document.write(`Numeros Impares decrescente : ${numeroImpar.reverse(", ")}</br>`);
 </script>

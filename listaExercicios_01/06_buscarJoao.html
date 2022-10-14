@@ -11,12 +11,12 @@
 
     //PROCESSAMENTO
     for(joão of listaDeNomes){
-         if(joão === "João" || joão === "joao"){
+         if(joão.toUpperCase().replace("Ã", "A").search("JOAO")>= 0){
             nomeJoão.push(joão);
          }
     }
 
-    document.write(`Nomes com João : ${nomeJoão.join(", ")}`);
+    document.write(`Nomes com João : ${nomeJoão.sort().join(", ")}`);
 
 
 
